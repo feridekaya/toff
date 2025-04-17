@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <title>TOFF - Doğallığın ve Endüstrinin Uyumu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="TOFF Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"class="active">Anasayfa</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="urunler.html">Ürünler</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="gallery">
+        <a href="kuzey.html">
+            <img src="img/kuzey.png" alt="Kuzey Koleksiyonu">
+        </a>
+        <a href="mavi.html">
+            <img src="img/mavi.png" alt="Mavi Koleksiyonu">
+        </a>
+        <a href="pas.html">
+            <img src="img/pas.png" alt="Pas Koleksiyonu">
+        </a>
+        <a href="kirec.html">
+            <img src="img/beton.png" alt="Kireç Koleksiyonu">
+        </a>
+    </section>
+      
+    
+    
+    
+
+    <main>
+        <section class="hero">
+            <h2>Steel & Wood Harmony</h2>
+            <p>Doğal ahşapla çeliği bir araya getirerek sade, sağlam ve estetik mobilyalar üretiyoruz.</p>
+            <a href="hakkimizda.html" class="hero-btn">Bizi Tanıyın</a>
+        </section>
+    </main>
+    
+    <script>
+        const faders = document.querySelectorAll('.fade-in');
+        
+        const appearOptions = {
+          threshold: 0.1
+        };
+        
+        const appearOnScroll = new IntersectionObserver(function(entries) {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        }, appearOptions);
+        
+        faders.forEach(fader => {
+          appearOnScroll.observe(fader);
+        });
+        </script>
+        
+    <footer>
+        <div class="social">
+            <a href="https://www.instagram.com/thetoffdesign/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/905424509342" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.pinterest.com/thetoffdesign/" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a href="https://www.tiktok.com/@thetoffdesign?lang=tr-TR" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+        
+        <p>© 2025 THE TOFF DESIGN</p>
+        <p><a href="iletisim.html" class="footer-link">Bize Ulaşın</a></p>
+    </footer>
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelector('.slides');
+        const totalSlides = document.querySelectorAll('.slide').length;
+    
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }, 4000); // Her 4 saniyede bir geçiş
+    </script>
+</body>
+</html>

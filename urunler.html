@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <meta charset="UTF-8">
+        <title>TOFF - Doğallığın ve Endüstrinin Uyumu</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    </head>
+    <body>
+        <header>
+            <div class="header-inner">
+                <div class="logo-container">
+                    <img src="img/logo.png" alt="TOFF Logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Anasayfa</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="urunler.html"class="active">Ürünler</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+   
+    <section class="products">
+        <div class="card">
+            <img src="img/kuzey.png" alt="Kuzey Koleksiyonu">
+            <h3>Kuzey Koleksiyonu</h3>
+            <p>Soğuk tonların estetiği ve modern sadelikle hazırlanmış özel seri.</p>
+            <a href="kuzey.html" class="btn-collection">Koleksiyonu Gör</a>
+        </div>
+    
+        <div class="card">
+            <img src="img/mavi.png" alt="Mavi Koleksiyonu">
+            <h3>Mavi Koleksiyonu</h3>
+            <p>Gri şehir dokusunu ve fonksiyonelliği sevenler için ideal koleksiyon.</p>
+            <a href="mavi.html" class="btn-collection">Koleksiyonu Gör</a>
+        </div>
+    
+        <div class="card">
+            <img src="img/pas.png" alt="Pas Koleksiyonu">
+            <h3>Pas Koleksiyonu</h3>
+            <p>Endüstriyel izler, rustik ruh ve zamansız malzeme birlikteliği.</p>
+            <a href="pas.html" class="btn-collection">Koleksiyonu Gör</a>
+        </div>
+    
+        <div class="card">
+            <img src="img/beton.png" alt="Kireç Koleksiyonu">
+            <h3>Kireç Koleksiyonu</h3>
+            <p>Doğal tonlar ve yumuşak dokularla oluşturulmuş sade yaşam alanları.</p>
+            <a href="kirec.html" class="btn-collection">Koleksiyonu Gör</a>
+        </div>
+    </section>
+    <script>
+        const faders = document.querySelectorAll('.fade-in');
+        
+        const appearOptions = {
+          threshold: 0.1
+        };
+        
+        const appearOnScroll = new IntersectionObserver(function(entries) {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        }, appearOptions);
+        
+        faders.forEach(fader => {
+          appearOnScroll.observe(fader);
+        });
+        </script>
+    <section class="product-grid">
+
+        <!-- KUZEY KOLEKSİYONU -->
+        <h2 class="collection-title">Kuzey Koleksiyonu</h2>
+        <div class="card-container">
+            <div class="product-card">
+                <img src="img/urun1.png" alt="Ürün 1">
+                <h4>Arktik Masa</h4>
+                <p>Buz grisi meşe ve çelik birleşimi.</p>
+            </div>
+            <div class="product-card">
+                <img src="img/urun2.png" alt="Ürün 2">
+                <h4>Fjord TV Ünitesi</h4>
+                <p>Minimal çizgilerle geniş alan.</p>
+            </div>
+            <div class="product-card">
+                <img src="img/urun3.png" alt="Ürün 3">
+                <h4>Kuzey Konsol</h4>
+                <p>Sade formda maksimum fonksiyon.</p>
+            </div>
+            <div class="product-card">
+                <img src="img/urun4.png" alt="Ürün 4">
+                <h4>İskandinav Raf</h4>
+                <p>Duvarı değil, ruhu tamamlar.</p>
+            </div>
+            <div class="product-card">
+                <img src="img/urun5.png" alt="Ürün 5">
+                <h4>Kutup Orta Sehpa</h4>
+                <p>Soğuk zarafetin merkez noktası.</p>
+            </div>
+        </div>
+    
+        <!-- MAVİ KOLEKSİYONU -->
+        <h2 class="collection-title">Mavi Koleksiyonu</h2>
+        <div class="card-container">
+            <div class="product-card"><img src="img/urun6.png"><h4>Beton Sehpa</h4><p>Gri zeminlerde incelik.</p></div>
+            <div class="product-card"><img src="img/urun7.png"><h4>Asfalt Raf</h4><p>Endüstriyel şıklık.</p></div>
+            <div class="product-card"><img src="img/urun8.png"><h4>Metropol Masa</h4><p>Şehir ruhuna uygun çizgiler.</p></div>
+            <div class="product-card"><img src="img/urun9.png"><h4>Gökyüzü Konsol</h4><p>Yumuşak mavi detaylar.</p></div>
+            <div class="product-card"><img src="img/urun10.png"><h4>Mavi Doku Ünitesi</h4><p>Fonksiyon ve ferahlık.</p></div>
+        </div>
+    
+        <!-- PAS KOLEKSİYONU -->
+        <h2 class="collection-title">Pas Koleksiyonu</h2>
+        <div class="card-container">
+            <div class="product-card"><img src="img/urun11.png"><h4>Paslı Sehpa</h4><p>Ruhunu eskiye yasla.</p></div>
+            <div class="product-card"><img src="img/urun12.png"><h4>Demir Raf</h4><p>Ham görünüm, güçlü yapı.</p></div>
+            <div class="product-card"><img src="img/urun13.png"><h4>Kiremit Masa</h4><p>Sıcak tonlarla çalışma alanı.</p></div>
+            <div class="product-card"><img src="img/urun14.png"><h4>Endüstri Konsol</h4><p>Çelik ve ağaç buluşması.</p></div>
+            <div class="product-card"><img src="img/urun15.png"><h4>Pas Rüyası</h4><p>Rustik koleksiyonun gözdesi.</p></div>
+        </div>
+    
+        <!-- KİREÇ KOLEKSİYONU -->
+        <h2 class="collection-title">Kireç Koleksiyonu</h2>
+        <div class="card-container">
+            <div class="product-card"><img src="img/urun16.png"><h4>Kireç Sehpa</h4><p>Taşla hafiflik bir arada.</p></div>
+            <div class="product-card"><img src="img/urun17.png"><h4>Doğal Raf</h4><p>Saf form, saf his.</p></div>
+            <div class="product-card"><img src="img/urun18.png"><h4>Kumlu Masa</h4><p>Yumuşak köşeler, sade yapı.</p></div>
+            <div class="product-card"><img src="img/urun19.png"><h4>Toz Konsol</h4><p>Mat bitişli zarif stil.</p></div>
+            <div class="product-card"><img src="img/urun20.png"><h4>Yüzey TV Ünitesi</h4><p>Organik görünüme modern yaklaşım.</p></div>
+        </div>
+    </section>
+        
+        <footer>
+            <div class="social">
+                <a href="https://www.instagram.com/thetoffdesign/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/905424509342" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.pinterest.com/thetoffdesign/" target="_blank"><i class="fab fa-pinterest"></i></a>
+                <a href="https://www.tiktok.com/@thetoffdesign?lang=tr-TR" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+            
+            <p>© 2025 THE TOFF DESIGN</p>
+            <p><a href="iletisim.html" class="footer-link">Bize Ulaşın</a></p>
+        </footer>
+        <script>
+            let currentIndex = 0;
+            const slides = document.querySelector('.slides');
+            const totalSlides = document.querySelectorAll('.slide').length;
+        
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }, 4000); // Her 4 saniyede bir geçiş
+        </script>
+    </body>
+    </html>

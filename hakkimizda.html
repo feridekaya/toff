@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <meta charset="UTF-8">
+        <title>TOFF - Doğallığın ve Endüstrinin Uyumu</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    </head>
+    <body>
+        <header>
+            <div class="header-inner">
+                <div class="logo-container">
+                    <img src="img/logo.png" alt="TOFF Logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Anasayfa</a></li>
+                        <li><a href="hakkimizda.html"class="active">Hakkımızda</a></li>
+                        <li><a href="urunler.html">Ürünler</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="about-page">
+
+            <section class="box-section">
+                <h2>Biz Kimiz?</h2>
+                <p>TOFF, 2024 yılında “doğallık ve endüstrinin uyumu” fikriyle doğdu.  
+                Masif ahşap ile metali bir araya getirerek hem sıcak hem de güçlü mobilyalar üretmeyi amaçlıyoruz.  
+                Her tasarımımızda sadelik, zamansızlık ve kalite önceliğimizdir.</p>
+            </section>
+        
+            <section class="box-section">
+                <h2>Vizyonumuz</h2>
+                <p>Yaşam alanlarına sadelik, doğallık ve endüstriyel zarafet katmak.</p>
+                <h2>Misyonumuz</h2>
+                <p>Her detayı özenle tasarlanmış, sürdürülebilir mobilyalar üretmek.</p>
+            </section>
+        
+            <section class="box-section">
+                <h2>Ekibimiz</h2>
+                <div class="team-members">
+                    <div class="member">
+                        <img src="img/osman.png" alt="Osman Demirbaş">
+                        <h3>Osman Demirbaş</h3>
+                        <p>Kurucu | Üretim & Teknik</p>
+                    </div>
+                    <div class="member">
+                        <img src="img/feride.png" alt="Feride Kaya">
+                        <h3>Feride Kaya</h3>
+                        <p>Bilgisayar Mühendisi & Marka Yönetimi</p>
+                    </div>
+                    <div class="member">
+                        <img src="img/tugce.png" alt="Tuğçe Demirbaş">
+                        <h3>Tuğçe Demirbaş</h3>
+                        <p>Mimar & Görsel Tasarım</p>
+                    </div>
+                    <div class="member">
+                        <img src="img/furkan.png" alt="Furkan Özcan">
+                        <h3>Furkan Özcan</h3>
+                        <p>Endüstri Mühendisi & Geliştirici</p>
+                    </div>
+                </div>
+            </section>
+        
+            <p style="text-align:center; margin-top:30px;">
+                <a href="index.html" class="hero-btn">Anasayfaya Dön</a>
+            </p>
+        </main>
+
+        <footer>
+            <div class="social">
+                <a href="https://www.instagram.com/thetoffdesign/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/905424509342" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.pinterest.com/thetoffdesign/" target="_blank"><i class="fab fa-pinterest"></i></a>
+                <a href="https://www.tiktok.com/@thetoffdesign?lang=tr-TR" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+            
+            <p>© 2025 THE TOFF DESIGN</p>
+            <p><a href="iletisim.html" class="footer-link">Bize Ulaşın</a></p>
+        </footer>
+        <script>
+            let currentIndex = 0;
+            const slides = document.querySelector('.slides');
+            const totalSlides = document.querySelectorAll('.slide').length;
+        
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }, 4000); // Her 4 saniyede bir geçiş
+        </script>
+    </body>
+    </html>
